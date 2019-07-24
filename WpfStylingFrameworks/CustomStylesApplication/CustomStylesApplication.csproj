@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ShellWindow.xaml" />
+    <None Remove="Styles\Button.xaml" />
+    <None Remove="Styles\ListView.xaml" />
+    <None Remove="Styles\Page.xaml" />
+    <None Remove="Styles\RadioButton.xaml" />
+    <None Remove="Styles\TextBlock.xaml" />
+    <None Remove="Styles\_Colors.xaml" />
+    <None Remove="Styles\_Font.xaml" />
+    <None Remove="Styles\_Thickness.xaml" />
+    <None Remove="Views\MainPage.xaml" />
+    <None Remove="Views\SecondaryPage.xaml" />
+  </ItemGroup>
+
+</Project>

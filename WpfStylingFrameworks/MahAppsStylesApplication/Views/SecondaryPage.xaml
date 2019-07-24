@@ -1,0 +1,91 @@
+﻿<Page x:Class="MahAppsStylesApplication.Views.SecondaryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MahAppsStylesApplication.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SecondaryPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="New" />
+                <MenuItem Header="Save" />
+                <MenuItem Header="Close" />
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="About" />
+                <MenuItem Header="What's new" />
+                <MenuItem Header="Update..." />
+            </MenuItem>
+        </Menu>
+        <StackPanel Grid.Row="1" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+            <TextBlock
+                Text="This is the secondary page." />
+            <CheckBox
+                Margin="{StaticResource SmallTopMargin}"
+                Content="Option A"/>
+            <CheckBox
+                Margin="{StaticResource SmallTopMargin}"
+                Content="Option B"/>
+            <CheckBox
+                Margin="{StaticResource SmallTopMargin}"
+                Content="Option C"/>
+            <RadioButton
+                Margin="{StaticResource SmallTopMargin}"
+                GroupName="Group1"
+                Content="Option A"/>
+            <RadioButton
+                Margin="{StaticResource SmallTopMargin}"
+                GroupName="Group1"
+                Content="Option B"/>
+            <RadioButton
+                Margin="{StaticResource SmallTopMargin}"
+                GroupName="Group1"
+                Content="Option C"/>
+            <ToggleButton
+                Content="I accept terms and conditions"
+                Margin="{StaticResource SmallTopMargin}" />
+            <TabControl Margin="{StaticResource SmallTopMargin}">
+                <TabItem Header="Item 1" />
+                <TabItem Header="Item 2" />
+                <TabItem Header="Item 3" />
+            </TabControl>
+            <TreeView Margin="{StaticResource SmallTopMargin}">
+                <TreeViewItem Header="Item 1">
+                    <TreeViewItem Header="Item 1.1" />
+                    <TreeViewItem Header="Item 1.2" />
+                    <TreeViewItem Header="Item 1.3" />
+                </TreeViewItem>
+                <TreeViewItem Header="Item 2">
+                    <TreeViewItem Header="Item 2.1">
+                        <TreeViewItem Header="Item 2.1.1" />
+                        <TreeViewItem Header="Item 2.1.2" />
+                    </TreeViewItem>
+                    <TreeViewItem Header="Item 2.2" />
+                </TreeViewItem>
+            </TreeView>
+            <!--
+            <DatePicker
+                Margin="{StaticResource SmallTopMargin}"/>
+            <ComboBox
+                Margin="{StaticResource SmallTopMargin}">
+                <ComboBoxItem Content="Option A"/>
+                <ComboBoxItem Content="Option B"/>
+                <ComboBoxItem Content="Option C"/>
+            </ComboBox>
+            -->
+            <Button
+                Margin="{StaticResource SmallTopMargin}"
+                HorizontalAlignment="Left"
+                Click="OnGoBackButtonClick"
+                Content="Go back" />
+        </StackPanel>
+    </Grid>
+</Page>

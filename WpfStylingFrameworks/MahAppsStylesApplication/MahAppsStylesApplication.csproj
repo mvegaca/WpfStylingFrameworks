@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ShellWindow.xaml" />
+    <None Remove="Styles\TextBlock.xaml" />
+    <None Remove="Styles\_Colors.xaml" />
+    <None Remove="Styles\_Font.xaml" />
+    <None Remove="Styles\_Thickness.xaml" />
+    <None Remove="Views\MainPage.xaml" />
+    <None Remove="Views\SecondaryPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.0.0-alpha0409" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Styles\TextBlock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\_Colors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\_Font.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\_Thickness.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="BaseListViewItemContainerStyle" TargetType="{x:Type ListViewItem}">
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    </Style>
+
+    <Style TargetType="{x:Type ListView}" x:Key="BaseListViewStyle">
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=ListViewBackgroundColorBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource ResourceKey=TextForegroundColorBrush}" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="SelectionMode" Value="Single" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="ItemContainerStyle" Value="{StaticResource BaseListViewItemContainerStyle}" />
+    </Style>
+
+</ResourceDictionary>
